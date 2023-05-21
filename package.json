@@ -30,6 +30,7 @@
     "react-dom": "18.2.0",
     "react-dropzone": "^14.2.3",
     "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.8.0",
     "socket.io": "^4.6.1",
     "socket.io-client": "^4.6.1",
     "swr": "^2.1.3",
@@ -64,5 +65,18 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
-  }
+  },
+  "description": "This is a social media app where users can create profiles, connect with friends, share posts, photos, and videos, and engage with other users through likes, comments, and direct messaging. The app is built using Next js and features a responsive design, real-time updates, and secure user authentication.",
+  "main": "jest.setup.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samarthra/guild2.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samarthra/guild2.0/issues"
+  },
+  "homepage": "https://github.com/Samarthra/guild2.0#readme",
+  "keywords": []
 }

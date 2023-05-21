@@ -1,19 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import {
-    BeakerIcon,
-    HomeIcon,
-    SearchIcon,
-    BellIcon,
-    ChatIcon,
-    PlusIcon,
-    SpeakerphoneIcon,
-    VideoCameraIcon,
-    SparklesIcon,
-    GlobeIcon,
-    ArrowCircleDownIcon,
-} from '@heroicons/react/outline';
+
 import { ChevronDownIcon, MenuIcon } from '@heroicons/react/solid';
+import { AiOutlineHome, AiOutlineSearch, AiOutlinePlus } from 'react-icons/ai';
+import { FiChevronDown } from 'react-icons/fi';
+import { HiOutlineSparkles, HiOutlineSpeakerphone } from 'react-icons/hi';
+import { HiOutlineGlobeAsiaAustralia } from 'react-icons/hi2';
+import { FaGlobeAmericas, FaRegBell } from 'react-icons/fa';
+import { BsChatDots } from 'react-icons/bs';
+import { BiDownArrowCircle } from 'react-icons/bi';
+
 import { Inter, Roboto } from 'next/font/google';
 import Dropdown from './Dropdown';
 import Link from 'next/link';
@@ -83,7 +79,7 @@ export default function Navbar() {
                 relative
             '
             >
-                <HomeIcon
+                <AiOutlineHome
                     className='
                         h-6 w-6
                         cursor-pointer
@@ -98,7 +94,7 @@ export default function Navbar() {
                 >
                     Home
                 </p>
-                <ChevronDownIcon
+                <FiChevronDown
                     className='
                         h-6 w-6
                         cursor-pointer
@@ -128,7 +124,7 @@ export default function Navbar() {
             lg:bg-gray-100
             '
             >
-                <SearchIcon
+                <AiOutlineSearch
                     className='
                         h-6 w-6
                         cursor-pointer
@@ -156,9 +152,9 @@ export default function Navbar() {
                 space-x-2
             '
             >
-                <SparklesIcon className='icon' />
-                <GlobeIcon className='icon' />
-                <PlusIcon className='icon' />
+                <HiOutlineSparkles className='icon' />
+                <HiOutlineGlobeAsiaAustralia className='icon' />
+                <AiOutlinePlus className='icon' />
                 <div
                     className='
                     flex
@@ -169,12 +165,12 @@ export default function Navbar() {
                     px-2 py-1
                 '
                 >
-                    <SpeakerphoneIcon className='icon' />
+                    <HiOutlineSpeakerphone className='icon' />
                     Promote
                 </div>
-                <VideoCameraIcon className='icon' />
-                <ChatIcon className='icon' />
-                <BellIcon className='icon' />
+                <FaGlobeAmericas className='icon' />
+                <BsChatDots className='icon' />
+                <FaRegBell className='icon' />
             </div>
 
             <div
@@ -245,7 +241,7 @@ export default function Navbar() {
             '
                     onClick={() => loginModal.onOpen()}
                 >
-                    <ArrowCircleDownIcon
+                    <BiDownArrowCircle
                         className='
                         rounded-full
                         cursor-pointer
